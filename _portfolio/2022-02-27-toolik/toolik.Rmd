@@ -1,0 +1,62 @@
+---
+title: "toolik time series"
+description: |
+  more toolik time series
+author:
+  - name: Casey O'Hara
+date: 2022-02-27
+output:
+  distill::distill_article:
+    self_contained: false
+    code_folding: show
+---
+
+```{r setup, include = TRUE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(here)
+library(lubridate)
+library(tsibble)
+library(feasts)
+```
+
+Toolik Station (LTER) meteorological data (Source: Source: Shaver, G. 2019. A multi-year DAILY file for the Toolik Field Station at Toolik Lake, AK starting 1988 to present. ver 4. Environmental Data Initiative.)
+
+```{r}
+toolik_ts <- read_csv(here("data/toolikweather.csv")) %>% 
+  mutate(date = lubridate::mdy(date)) %>% 
+  as_tsibble(key = NULL, index = date)
+
+toolik_month <- toolik_ts %>% 
+  index_by(yr_mo = ~yearmonth(.)) %>% 
+  summarize(monthly_mean_temp = mean(mean_airtemp, na.rm = TRUE)) %>%
+  mutate(mo = fct_inorder(as.character(month(yr_mo))))
+```
+
+```{r}
+toolik_month %>% 
+  ggplot(aes(x = year(yr_mo), y = monthly_mean_temp)) +
+  geom_line(aes(color = mo), show.legend = FALSE) +
+  facet_wrap(~month(yr_mo, label = TRUE)) +
+  theme_minimal() +
+  labs(x = "Year",
+       y = "Annual mean air temperature (Celsius)",
+       title = "Toolik Station mean annual air temperature",
+       subtitle = "1988 - 2018",
+       caption = "Source: Shaver, G. 2019. A multi-year DAILY \nweather file for the Toolik Field Station at Toolik Lake, AK\n starting 1988 to present. ver 4. Environmental Data Initiative.")
+```
+
+
+### Season plot
+
+```{r}
+# Now a season plot: 
+toolik_month %>% 
+  gg_season(y = monthly_mean_temp) +
+  theme_minimal() +
+  labs(x = "Year",
+       y = "Mean monthly air temperature (Celsius)",
+       title = "Toolik Station air temperature")
+```
+
+

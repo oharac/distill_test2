@@ -1,0 +1,22 @@
+---
+title: "Lizards!"
+description: |
+  analysis of lizards
+output: 
+  distill::distill_article:
+    code_folding: hide
+---
+
+```{r setup, include = TRUE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(here)
+```
+
+```{r}
+lizards <- read_csv(here('data/lizard.csv'))
+ggplot(lizards, aes(x = SV_length, y = weight, color = sex)) +
+  geom_point() +
+  theme_dark()
+```
+

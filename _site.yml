@@ -9,8 +9,18 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Data viz"
+      href: data_viz.html
+    - text: "Projects"
+      menu:
+      - text: 'project 1'
+        href: proj1.html
+      - text: 'project 2'
+        href: proj2.html
     - text: "Blog"
       href: blog.html
+    - text: "Data portfolio"
+      href: portfolio.html
     - text: "CV"
       href: waffle_cv.html
 output: distill::distill_article

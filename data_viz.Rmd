@@ -1,0 +1,18 @@
+---
+title: "Data viz gallery"
+description: |
+  Some cool plots
+output: distill::distill_article
+---
+
+### My cool plot on species vulnerability
+
+![](img/vuln_plot.png)
+
+Fig. 1: here is some text/caption
+
+```
+this will appear in code formatted text
+
+```
+

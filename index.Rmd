@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Waffle's website"
-image: "waffle_pic.jpg"
+image: "img/waffle2.jpg"
 links:
   - label: LinkedIn
     url: "https://linkedin.com/"
@@ -15,7 +15,7 @@ output:
 site: distill::distill_website
 ---
 
-Waffle is a classically trained data scientist living in the San Francisco Bay Area. 
-Currently he works on the Oculus team at Facebook. He loves talking about baseball, 
-true crime podcasts, and causal inference.
+Waffle is a classically trained data dog living in Santa Barbara. 
+Currently he helps Casey teach ESM 244. He loves long walks on the beach, 
+chasing squirrels and being chased by other larger dogs, and spatial analysis in R.
 

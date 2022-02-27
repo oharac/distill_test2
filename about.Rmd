@@ -4,8 +4,11 @@ description: |
   Some additional details about the website dedicated to Waffle
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
-Here's some text about Waffle
+More pics of Waffle!
+
+![](img/waffle3.jpg)
+
+![](img/waffle_shark.jpg)
+
+![](img/waffle_pic.jpg)
