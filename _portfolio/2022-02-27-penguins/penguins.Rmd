@@ -1,0 +1,29 @@
+---
+title: "penguins"
+description: |
+  hey look, penguins!
+author:
+  - name: Casey O'Hara
+    url: {}
+date: 2022-02-27
+output:
+  distill::distill_article:
+    self_contained: false
+    code_folding: show
+---
+
+
+```{r setup, include = TRUE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+### a penguins plot
+
+```{r}
+ggplot(penguins, aes(x = bill_depth_mm, y = body_mass_g, color = species)) +
+  geom_point() +
+  theme_light()
+```
+

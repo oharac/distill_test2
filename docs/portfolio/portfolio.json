@@ -15,5 +15,22 @@
     "preview": "portfolio/2022-02-27-toolik/toolik_files/figure-html5/unnamed-chunk-2-1.png",
     "last_modified": "2022-02-27T10:29:58-08:00",
     "input_file": {}
+  },
+  {
+    "path": "portfolio/2022-02-27-penguins/",
+    "title": "penguins",
+    "description": "hey look, penguins!",
+    "author": [
+      {
+        "name": "Casey O'Hara",
+        "url": {}
+      }
+    ],
+    "date": "2022-02-27",
+    "categories": [],
+    "contents": "\n\n\nshow\n\nknitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\n\n\na penguins plot\n\n\nshow\n\nggplot(penguins, aes(x = bill_depth_mm, y = body_mass_g, color = species)) +\n  geom_point() +\n  theme_light()\n\n\n\n\n\n\n\n",
+    "preview": "portfolio/2022-02-27-penguins/penguins_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2022-02-27T11:15:40-08:00",
+    "input_file": "penguins.knit.md"
   }
 ]
