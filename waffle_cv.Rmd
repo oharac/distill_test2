@@ -1,0 +1,29 @@
+---
+title: "Curriculum Vitae - Waffle"
+---
+
+<a href = 'waffle_cv.pdf' target = '_blank'>Click here for a PDF</a>
+
+## Education
+
+Waffle has mastered the following tricks
+
+* sit
+* stay
+* fist bump
+
+## Experience
+
+Waffle is well experienced with
+
+* naps
+* beach
+* hikes
+
+## References
+
+Waffle is a good boy, which the following references will attest
+
+* Teddy
+* Scallop
+* Audrey

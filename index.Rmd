@@ -1,5 +1,5 @@
 ---
-title: "Waffle"
+title: "Welcome to Waffle's website"
 image: "waffle_pic.jpg"
 links:
   - label: LinkedIn
@@ -11,10 +11,11 @@ links:
   - label: Email
     url: "mailto:email@email.com"
 output:
-  postcards::jolla
+  postcards::trestles
 site: distill::distill_website
 ---
- 
-I am a classically trained data scientist living in the San Francisco Bay Area. 
-Currently I work on the Oculus team at Facebook. I love talking about baseball, 
+
+Waffle is a classically trained data scientist living in the San Francisco Bay Area. 
+Currently he works on the Oculus team at Facebook. He loves talking about baseball, 
 true crime podcasts, and causal inference.
+

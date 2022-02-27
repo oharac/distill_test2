@@ -2,19 +2,33 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "title": "About Waffle's site",
+      "description": "Some additional details about the website dedicated to Waffle",
+      "author": [],
+      "contents": "\nHere’s some text about Waffle\n\n\n\n",
+      "last_modified": "2022-02-27T08:16:20-08:00"
+    },
+    {
+      "path": "blog.html",
+      "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-01-12T09:28:21-08:00"
+      "last_modified": "2022-02-27T08:16:21-08:00"
     },
     {
       "path": "index.html",
-      "title": "Waffle",
+      "title": "Welcome to Waffle's website",
       "author": [],
-      "contents": "\n\n          \n          \n          my website\n          \n          \n          Home\n          About\n          ☰\n          \n          \n      \n        \n          \n            Waffle\n          \n          \n            \n              I am a classically trained data scientist living in the San Francisco Bay Area. Currently I work on the Oculus team at Facebook. I love talking about baseball, true crime podcasts, and causal inference.\n            \n            \n              I am a classically trained data scientist living in the San Francisco Bay Area. Currently I work on the Oculus team at Facebook. I love talking about baseball, true crime podcasts, and causal inference.\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      Twitter\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    Twitter\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2022-01-12T09:28:21-08:00"
+      "contents": "\n\n          \n          \n          Waffle's page\n          \n          \n          Home\n          About\n          Blog\n          CV\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Welcome to Waffle’s website\n            \n            \n              \n                \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Twitter\n                      \n                    \n                  \n                                    \n                    \n                      \n                        GitHub\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Email\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            Waffle is a classically trained data scientist living in the San Francisco Bay Area. Currently he works on the Oculus team at Facebook. He loves talking about baseball, true crime podcasts, and causal inference.\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Welcome to Waffle’s website\n            \n            \n              \n                \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      Twitter\n                    \n                  \n                                    \n                    \n                      GitHub\n                    \n                  \n                                    \n                    \n                      Email\n                    \n                  \n                                  \n              \n            \n            \n              Waffle is a classically trained data scientist living in the San Francisco Bay Area. Currently he works on the Oculus team at Facebook. He loves talking about baseball, true crime podcasts, and causal inference.\n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2022-02-27T08:16:21-08:00"
+    },
+    {
+      "path": "waffle_cv.html",
+      "title": "Curriculum Vitae - Waffle",
+      "author": [],
+      "contents": "\nClick here for a PDF\nEducation\nWaffle has mastered the following tricks\nsit\nstay\nfist bump\nExperience\nWaffle is well experienced with\nnaps\nbeach\nhikes\nReferences\nWaffle is a good boy, which the following references will attest\nTeddy\nScallop\nAudrey\n\n\n\n",
+      "last_modified": "2022-02-27T08:16:22-08:00"
     }
   ],
-  "collections": []
+  "collections": ["posts/posts.json"]
 }

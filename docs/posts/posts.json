@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/2022-02-01-another/",
+    "title": "another",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Casey O'Hara",
+        "url": {}
+      }
+    ],
+    "date": "2022-02-01",
+    "categories": [],
+    "contents": "\n\n\n\n\n\n\n",
+    "preview": "posts/2022-02-01-another/another_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2022-02-01T13:43:14-08:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2022-01-12-welcome/",
+    "title": "welcome",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Casey O'Hara",
+        "url": {}
+      }
+    ],
+    "date": "2022-01-12",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-01-15T12:05:48-08:00",
+    "input_file": {}
+  }
+]
