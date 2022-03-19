@@ -19,9 +19,5 @@ Waffle is a classically trained data dog living in Santa Barbara.
 Currently he helps Casey teach ESM 244. He loves long walks on the beach, 
 chasing squirrels and being chased by other larger dogs, and spatial analysis in R.
 
-![heres waffle](img/waffle_pic.jpg)
 
-[this is the text](proj1.html)
-
-<a href = 'proj2.html'>link</a>
 
