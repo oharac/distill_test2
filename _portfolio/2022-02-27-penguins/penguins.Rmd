@@ -10,7 +10,7 @@ output:
   distill::distill_article:
     self_contained: false
     code_folding: show
-base_url: https://oharac.github.io
+base_url: test
 ---
 
 

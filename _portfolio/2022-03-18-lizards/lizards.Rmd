@@ -9,7 +9,7 @@ date: 2022-03-18
 output:
   distill::distill_article:
     self_contained: false
-base_url: https://oharac.github.io
+# base_url: https://oharac.github.io/distill_test2
 preview: lizard.jpeg
 ---
 
