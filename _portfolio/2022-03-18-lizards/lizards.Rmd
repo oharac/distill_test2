@@ -1,10 +1,16 @@
 ---
-title: "Lizards!"
+title: "lizards"
 description: |
-  analysis of lizards
-output: 
+  A short description of the post.
+author:
+  - name: Casey O'Hara
+    url: {}
+date: 2022-03-18
+output:
   distill::distill_article:
-    code_folding: hide
+    self_contained: false
+base_url: https://oharac.github.io
+preview: lizard.jpeg
 ---
 
 ```{r setup, include = TRUE, message = FALSE, warning = FALSE}
@@ -20,9 +26,9 @@ ggplot(lizards, aes(x = SV_length, y = weight, color = sex)) +
   theme_dark()
 ```
 
-# level 1 header
-
-<h1>level 1 header</h1>
-
-
-
+```{r}
+lizards <- read_csv(here('data/lizard.csv'))
+ggplot(lizards, aes(x = SV_length, y = weight, color = sex)) +
+  geom_point() +
+  theme_dark()
+```

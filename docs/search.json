@@ -6,14 +6,14 @@
       "description": "Some additional details about the website dedicated to Waffle",
       "author": [],
       "contents": "\nMore pics of Waffle!\n\n\n\n\n\n\n",
-      "last_modified": "2022-02-27T10:31:35-08:00"
+      "last_modified": "2022-03-18T17:06:19-07:00"
     },
     {
       "path": "blog.html",
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-02-27T10:31:36-08:00"
+      "last_modified": "2022-03-18T17:06:21-07:00"
     },
     {
       "path": "data_viz.html",
@@ -21,44 +21,44 @@
       "description": "Some cool plots\n",
       "author": [],
       "contents": "\nMy cool plot on species vulnerability\n\nFig. 1: here is some text/caption\nthis will appear in code formatted text\n\n\n\n\n",
-      "last_modified": "2022-02-27T10:31:37-08:00"
+      "last_modified": "2022-03-18T17:06:21-07:00"
     },
     {
       "path": "index.html",
       "title": "Welcome to Waffle's website",
       "author": [],
-      "contents": "\n\n          \n          \n          Waffle's page\n          \n          \n          Home\n          About\n          Data viz\n          \n          \n          Projects\n           \n          ▾\n          \n          \n          project 1\n          project 2\n          \n          \n          Blog\n          Data portfolio\n          CV\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Welcome to Waffle’s website\n            \n            \n              \n                \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Twitter\n                      \n                    \n                  \n                                    \n                    \n                      \n                        GitHub\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Email\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            Waffle is a classically trained data dog living in Santa Barbara. Currently he helps Casey teach ESM 244. He loves long walks on the beach, chasing squirrels and being chased by other larger dogs, and spatial analysis in R.\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Welcome to Waffle’s website\n            \n            \n              \n                \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      Twitter\n                    \n                  \n                                    \n                    \n                      GitHub\n                    \n                  \n                                    \n                    \n                      Email\n                    \n                  \n                                  \n              \n            \n            \n              Waffle is a classically trained data dog living in Santa Barbara. Currently he helps Casey teach ESM 244. He loves long walks on the beach, chasing squirrels and being chased by other larger dogs, and spatial analysis in R.\n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2022-02-27T10:31:37-08:00"
+      "contents": "\n\n          \n          \n          Waffle's page\n          \n          \n          Home\n          About\n          Data viz\n          \n          \n          Projects\n           \n          ▾\n          \n          \n          project 1\n          project 2\n          \n          \n          Blog\n          Data portfolio\n          CV\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Welcome to Waffle’s website\n            \n            \n              \n                \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Twitter\n                      \n                    \n                  \n                                    \n                    \n                      \n                        GitHub\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Email\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            Waffle is a classically trained data dog living in Santa Barbara. Currently he helps Casey teach ESM 244. He loves long walks on the beach, chasing squirrels and being chased by other larger dogs, and spatial analysis in R.\n            \n            heres waffle\n            \n            this is the text\n            link\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Welcome to Waffle’s website\n            \n            \n              \n                \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      Twitter\n                    \n                  \n                                    \n                    \n                      GitHub\n                    \n                  \n                                    \n                    \n                      Email\n                    \n                  \n                                  \n              \n            \n            \n              Waffle is a classically trained data dog living in Santa Barbara. Currently he helps Casey teach ESM 244. He loves long walks on the beach, chasing squirrels and being chased by other larger dogs, and spatial analysis in R.\n              \n              heres waffle\n              \n              this is the text\n              link\n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2022-03-18T17:06:21-07:00"
     },
     {
       "path": "portfolio.html",
       "title": "Portfolio",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-02-27T10:31:38-08:00"
+      "last_modified": "2022-03-18T17:06:22-07:00"
     },
     {
       "path": "proj1.html",
       "title": "Lizards!",
       "description": "analysis of lizards\n",
       "author": [],
-      "contents": "\n\n\nhide\n\nknitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)\nlibrary(tidyverse)\nlibrary(here)\n\n\n\n\n\nhide\n\nlizards <- read_csv(here('data/lizard.csv'))\nggplot(lizards, aes(x = SV_length, y = weight, color = sex)) +\n  geom_point() +\n  theme_dark()\n\n\n\n\n\n\n\n",
-      "last_modified": "2022-02-27T10:31:47-08:00"
+      "contents": "\n\n\nhide\n\nknitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)\nlibrary(tidyverse)\nlibrary(here)\n\n\n\n\n\nhide\n\nlizards <- read_csv(here('data/lizard.csv'))\nggplot(lizards, aes(x = SV_length, y = weight, color = sex)) +\n  geom_point() +\n  theme_dark()\n\n\n\n\nlevel 1 header\n\nlevel 1 header\n\n\n\n\n",
+      "last_modified": "2022-03-18T17:06:26-07:00"
     },
     {
       "path": "proj2.html",
       "title": "Time series analysis",
-      "description": "Toolik weather station temps\n",
+      "description": "Toolik weather station temps",
       "author": [],
-      "contents": "\n\n\nknitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)\nlibrary(tidyverse)\nlibrary(here)\nlibrary(lubridate)\nlibrary(tsibble)\nlibrary(feasts)\n\n\n\nToolik Station (LTER) meteorological data (Source: Source: Shaver, G. 2019. A multi-year DAILY file for the Toolik Field Station at Toolik Lake, AK starting 1988 to present. ver 4. Environmental Data Initiative.)\n\n\ntoolik_ts <- read_csv(\"data/toolikweather.csv\") %>% \n  mutate(date = lubridate::mdy(date)) %>% \n  as_tsibble(key = NULL, index = date)\n\ntoolik_month <- toolik_ts %>% \n  index_by(yr_mo = ~yearmonth(.)) %>% \n  summarize(monthly_mean_temp = mean(mean_airtemp, na.rm = TRUE)) %>%\n  mutate(mo = fct_inorder(as.character(month(yr_mo))))\n\n\n\n\n\ntoolik_month %>% \n  ggplot(aes(x = year(yr_mo), y = monthly_mean_temp)) +\n  geom_line(aes(color = mo), show.legend = FALSE) +\n  facet_wrap(~month(yr_mo, label = TRUE)) +\n  theme_minimal() +\n  labs(x = \"Year\",\n       y = \"Annual mean air temperature (Celsius)\",\n       title = \"Toolik Station mean annual air temperature\",\n       subtitle = \"1988 - 2018\",\n       caption = \"Source: Shaver, G. 2019. A multi-year DAILY \\nweather file for the Toolik Field Station at Toolik Lake, AK\\n starting 1988 to present. ver 4. Environmental Data Initiative.\")\n\n\n\n\nSeason plot\n\n\n# Now a season plot: \ntoolik_month %>% \n  gg_season(y = monthly_mean_temp) +\n  theme_minimal() +\n  labs(x = \"Year\",\n       y = \"Mean monthly air temperature (Celsius)\",\n       title = \"Toolik Station air temperature\")\n\n\n\n\n\n\n\n",
-      "last_modified": "2022-02-27T10:31:55-08:00"
+      "contents": "\n\n\nknitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)\nlibrary(tidyverse)\nlibrary(here)\nlibrary(lubridate)\nlibrary(tsibble)\nlibrary(feasts)\n\n\n\nToolik Station (LTER) meteorological data (Source: Source: Shaver, G. 2019. A multi-year DAILY file for the Toolik Field Station at Toolik Lake, AK starting 1988 to present. ver 4. Environmental Data Initiative.)\n\n\ntoolik_ts <- read_csv(\"data/toolikweather.csv\") %>% \n  mutate(date = lubridate::mdy(date)) %>% \n  as_tsibble(key = NULL, index = date)\n\ntoolik_month <- toolik_ts %>% \n  index_by(yr_mo = ~yearmonth(.)) %>% \n  summarize(monthly_mean_temp = mean(mean_airtemp, na.rm = TRUE)) %>%\n  mutate(mo = fct_inorder(as.character(month(yr_mo))))\n\n\n\n\n\ntoolik_month %>% \n  ggplot(aes(x = year(yr_mo), y = monthly_mean_temp)) +\n  geom_line(aes(color = mo), show.legend = FALSE) +\n  facet_wrap(~month(yr_mo, label = TRUE)) +\n  theme_minimal() +\n  labs(x = \"Year\",\n       y = \"Annual mean air temperature (Celsius)\",\n       title = \"Toolik Station mean annual air temperature\",\n       subtitle = \"1988 - 2018\",\n       caption = \"Source: Shaver, G. 2019. A multi-year DAILY \\nweather file for the Toolik Field Station at Toolik Lake, AK\\n starting 1988 to present. ver 4. Environmental Data Initiative.\")\n\n\n\n\n\n\n# Now a season plot: \ntoolik_month %>% \n  gg_season(y = monthly_mean_temp) +\n  theme_minimal() +\n  labs(x = \"Year\",\n       y = \"Mean monthly air temperature (Celsius)\",\n       title = \"Toolik Station air temperature\")\n\n\n\n\n\n\n\n",
+      "last_modified": "2022-03-18T17:06:31-07:00"
     },
     {
       "path": "waffle_cv.html",
       "title": "Curriculum Vitae - Waffle",
       "author": [],
       "contents": "\nClick here for a PDF\nEducation\nWaffle has mastered the following tricks\nsit\nstay\nfist bump\nExperience\nWaffle is well experienced with\nnaps\nbeach\nhikes\nReferences\nWaffle is a good boy, which the following references will attest\nTeddy\nScallop\nAudrey\n\n\n\n",
-      "last_modified": "2022-02-27T10:31:56-08:00"
+      "last_modified": "2022-03-18T17:06:31-07:00"
     }
   ],
   "collections": ["posts/posts.json", "portfolio/portfolio.json"]

@@ -1,19 +1,19 @@
 [
   {
-    "path": "portfolio/2022-02-27-toolik/",
-    "title": "toolik time series",
-    "description": "more toolik time series",
+    "path": "portfolio/2022-03-18-lizards/",
+    "title": "lizards",
+    "description": "A short description of the post.",
     "author": [
       {
         "name": "Casey O'Hara",
         "url": {}
       }
     ],
-    "date": "2022-02-27",
+    "date": "2022-03-18",
     "categories": [],
-    "contents": "\n\n\nshow\n\nknitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)\nlibrary(tidyverse)\nlibrary(here)\nlibrary(lubridate)\nlibrary(tsibble)\nlibrary(feasts)\n\n\n\nToolik Station (LTER) meteorological data (Source: Source: Shaver, G. 2019. A multi-year DAILY file for the Toolik Field Station at Toolik Lake, AK starting 1988 to present. ver 4. Environmental Data Initiative.)\n\n\nshow\n\ntoolik_ts <- read_csv(here(\"data/toolikweather.csv\")) %>% \n  mutate(date = lubridate::mdy(date)) %>% \n  as_tsibble(key = NULL, index = date)\n\ntoolik_month <- toolik_ts %>% \n  index_by(yr_mo = ~yearmonth(.)) %>% \n  summarize(monthly_mean_temp = mean(mean_airtemp, na.rm = TRUE)) %>%\n  mutate(mo = fct_inorder(as.character(month(yr_mo))))\n\n\n\n\n\nshow\n\ntoolik_month %>% \n  ggplot(aes(x = year(yr_mo), y = monthly_mean_temp)) +\n  geom_line(aes(color = mo), show.legend = FALSE) +\n  facet_wrap(~month(yr_mo, label = TRUE)) +\n  theme_minimal() +\n  labs(x = \"Year\",\n       y = \"Annual mean air temperature (Celsius)\",\n       title = \"Toolik Station mean annual air temperature\",\n       subtitle = \"1988 - 2018\",\n       caption = \"Source: Shaver, G. 2019. A multi-year DAILY \\nweather file for the Toolik Field Station at Toolik Lake, AK\\n starting 1988 to present. ver 4. Environmental Data Initiative.\")\n\n\n\n\nSeason plot\n\n\nshow\n\n# Now a season plot: \ntoolik_month %>% \n  gg_season(y = monthly_mean_temp) +\n  theme_minimal() +\n  labs(x = \"Year\",\n       y = \"Mean monthly air temperature (Celsius)\",\n       title = \"Toolik Station air temperature\")\n\n\n\n\n\n\n\n",
-    "preview": "portfolio/2022-02-27-toolik/toolik_files/figure-html5/unnamed-chunk-2-1.png",
-    "last_modified": "2022-02-27T10:29:58-08:00",
+    "contents": "\n\n\nknitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)\nlibrary(tidyverse)\nlibrary(here)\n\n\n\n\n\nlizards <- read_csv(here('data/lizard.csv'))\nggplot(lizards, aes(x = SV_length, y = weight, color = sex)) +\n  geom_point() +\n  theme_dark()\n\n\n\n\n\n\nlizards <- read_csv(here('data/lizard.csv'))\nggplot(lizards, aes(x = SV_length, y = weight, color = sex)) +\n  geom_point() +\n  theme_dark()\n\n\n\n\n\n\n\n",
+    "preview": "portfolio/2022-03-18-lizards/lizard.jpeg",
+    "last_modified": "2022-03-18T17:06:13-07:00",
     "input_file": {}
   },
   {
@@ -28,9 +28,28 @@
     ],
     "date": "2022-02-27",
     "categories": [],
-    "contents": "\n\n\nshow\n\nknitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\n\n\na penguins plot\n\n\nshow\n\nggplot(penguins, aes(x = bill_depth_mm, y = body_mass_g, color = species)) +\n  geom_point() +\n  theme_light()\n\n\n\n\n\n\n\n",
-    "preview": "portfolio/2022-02-27-penguins/penguins_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2022-02-27T11:15:40-08:00",
-    "input_file": "penguins.knit.md"
+    "contents": "\n\n\nshow\n\nknitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\n\n\n\n\nshow\n\nggplot(penguins, aes(x = bill_depth_mm, y = body_mass_g, color = species)) +\n  geom_point() +\n  theme_light()\n\n\n\n\n\n\nshow\n\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species)) +\n  geom_point() +\n  scale_color_viridis_d() +\n  theme_dark()\n\n\n\n\n\n\n\n",
+    "preview": "portfolio/2022-02-27-penguins/penguins_files/figure-html5/unnamed-chunk-2-1.png",
+    "last_modified": "2022-03-18T17:02:38-07:00",
+    "input_file": {},
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
+    "path": "portfolio/2022-02-27-toolik/",
+    "title": "toolik time series",
+    "description": "more toolik time series",
+    "author": [
+      {
+        "name": "Casey O'Hara",
+        "url": {}
+      }
+    ],
+    "date": "2022-02-27",
+    "categories": [],
+    "contents": "\n\n\nshow\n\nknitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)\nlibrary(tidyverse)\nlibrary(here)\nlibrary(lubridate)\nlibrary(tsibble)\nlibrary(feasts)\n\n\n\nToolik Station (LTER) meteorological data (Source: Source: Shaver, G. 2019. A multi-year DAILY file for the Toolik Field Station at Toolik Lake, AK starting 1988 to present. ver 4. Environmental Data Initiative.)\n\n\nshow\n\ntoolik_ts <- read_csv(here(\"data/toolikweather.csv\")) %>% \n  mutate(date = lubridate::mdy(date)) %>% \n  as_tsibble(key = NULL, index = date)\n\ntoolik_month <- toolik_ts %>% \n  index_by(yr_mo = ~yearmonth(.)) %>% \n  summarize(monthly_mean_temp = mean(mean_airtemp, na.rm = TRUE)) %>%\n  mutate(mo = fct_inorder(as.character(month(yr_mo))))\n\n\n\n\n\nshow\n\ntoolik_month %>% \n  ggplot(aes(x = year(yr_mo), y = monthly_mean_temp)) +\n  geom_line(aes(color = mo), show.legend = FALSE) +\n  facet_wrap(~month(yr_mo, label = TRUE)) +\n  theme_minimal() +\n  labs(x = \"Year\",\n       y = \"Annual mean air temperature (Celsius)\",\n       title = \"Toolik Station mean annual air temperature\",\n       subtitle = \"1988 - 2018\",\n       caption = \"Source: Shaver, G. 2019. A multi-year DAILY \\nweather file for the Toolik Field Station at Toolik Lake, AK\\n starting 1988 to present. ver 4. Environmental Data Initiative.\")\n\n\n\n\nSeason plot\n\n\nshow\n\n# Now a season plot: \ntoolik_month %>% \n  gg_season(y = monthly_mean_temp) +\n  theme_minimal() +\n  labs(x = \"Year\",\n       y = \"Mean monthly air temperature (Celsius)\",\n       title = \"Toolik Station air temperature\")\n\n\n\n\n\n\n\n",
+    "preview": "https://rstudio.github.io/distill/images/javascript-d3-preview.png",
+    "last_modified": "2022-03-18T16:54:07-07:00",
+    "input_file": {}
   }
 ]

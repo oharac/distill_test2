@@ -2,7 +2,6 @@
 title: "Time series analysis"
 description: |
   Toolik weather station temps
-output: distill::distill_article
 ---
 
 ```{r setup, include = TRUE, message = FALSE, warning = FALSE}
@@ -16,6 +15,7 @@ library(feasts)
 
 Toolik Station (LTER) meteorological data (Source: Source: Shaver, G. 2019. A multi-year DAILY file for the Toolik Field Station at Toolik Lake, AK starting 1988 to present. ver 4. Environmental Data Initiative.)
 
+
 ```{r}
 toolik_ts <- read_csv("data/toolikweather.csv") %>% 
   mutate(date = lubridate::mdy(date)) %>% 
@@ -26,6 +26,7 @@ toolik_month <- toolik_ts %>%
   summarize(monthly_mean_temp = mean(mean_airtemp, na.rm = TRUE)) %>%
   mutate(mo = fct_inorder(as.character(month(yr_mo))))
 ```
+
 
 ```{r}
 toolik_month %>% 
@@ -40,8 +41,6 @@ toolik_month %>%
        caption = "Source: Shaver, G. 2019. A multi-year DAILY \nweather file for the Toolik Field Station at Toolik Lake, AK\n starting 1988 to present. ver 4. Environmental Data Initiative.")
 ```
 
-
-### Season plot
 
 ```{r}
 # Now a season plot: 

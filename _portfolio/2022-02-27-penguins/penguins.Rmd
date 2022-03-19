@@ -10,6 +10,7 @@ output:
   distill::distill_article:
     self_contained: false
     code_folding: show
+base_url: https://oharac.github.io
 ---
 
 
@@ -19,7 +20,6 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-### a penguins plot
 
 ```{r}
 ggplot(penguins, aes(x = bill_depth_mm, y = body_mass_g, color = species)) +
@@ -27,3 +27,9 @@ ggplot(penguins, aes(x = bill_depth_mm, y = body_mass_g, color = species)) +
   theme_light()
 ```
 
+```{r, preview = TRUE}
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
+  geom_point() +
+  scale_color_viridis_d() +
+  theme_dark()
+```
